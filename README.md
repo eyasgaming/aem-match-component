@@ -20,7 +20,7 @@ Add the following HTML to the page:
 
 See index.html for example code.
 
-see TBD for eample site.
+see https://proud-tree-0923ba603.3.azurestaticapps.net/index.html for eample site.
 
 ## parameters:
  - **bet-offer-id** The market id of the 1x2 main market taken from https://kambi-explorer.eyasgaming.net/ (click on a market to get the id in the paste buffer).
