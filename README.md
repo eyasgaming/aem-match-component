@@ -18,7 +18,7 @@ Add the following HTML to the page:
         <eyas-match-container bet-offer-id="2282924245"></eyas-match-container>
 ```
 
-See index.html for example code. 
+See index.html for example code.
 
 see TBD for eample site.
 
