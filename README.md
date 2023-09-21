@@ -1,7 +1,6 @@
 # Introduction 
 This componet is for use on partner websites to display the teams, shirts and odds for one match. 
-The component will contain the match ID.
-There are two coupon IDs, one for prod and one for non prod (testing)
+It takes as a parameter the market id (aka bet offer ID) of the 1x2 main market.
 There are 3 test pages here, one for the Production component, one for Eyas UAT coponent, and one for  Eyas DEV component (only visible to eyas)
 
 # Getting Started
