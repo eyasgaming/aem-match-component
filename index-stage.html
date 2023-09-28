@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- ONLY INCLUDE SCRIPT ONCE PER PAGE -->
-    <script src="https://lancebet-com-stage.eyasgaming.net/etc.clientlibs/eyas-web/clientlibs/external-components.latest.js"
+    <script
+        src="https://lancebet-com-stage.eyasgaming.net/etc.clientlibs/eyas-web/clientlibs/external-components.latest.js"
         data-eyas-config="https://lancebet-com-stage.eyasgaming.net/content/eyas-web/lancebet_com/pt.client.settings.json?_=1"
         async></script>
 </head>
@@ -18,7 +19,12 @@
     </div>
 
     <h1>AEM match component test page for STAGE</h1>
-    <eyas-match-container bet-offer-id="2397942566"></eyas-match-container>
+    <eyas-match-container id="miMatch">No Matches currently
+        avaliable</eyas-match-container>
+
+    <eyas-match prod="true"></eyas-match>
+
+    <script src="./js/match.js"></script>
 </body>
 
 </html>
