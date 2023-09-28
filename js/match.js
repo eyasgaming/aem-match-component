@@ -2,7 +2,7 @@ const template = document.createElement('template');
 
 /****
  * 
- * usage:    <eyas-match-container matchId="1019426462" prod="true" loadingText="Loading..." drawText="draw" winText="to win" layout="horizontal">No Matches currently avaliable</eyas-match-container>
+ * usage:    <eyas-match-container prod="true"></eyas-match-container>
  *
  ***/
 
@@ -109,24 +109,28 @@ class Match extends HTMLElement {
             this.$match.innerHTML = this.textContent;
             return;
         }
-        
+
         //Creating a list of all events ids
         const eventIds = events.map((event) => event.id);
         //Selecting a random event id
         const randomEventId = eventIds[Math.floor(Math.random() * eventIds.length)];
         //Selecting the event with the random id
         const selectedEvent = events.find((event) => event.id === randomEventId);
-        console.log('Event selected:', selectedEvent);
-        console.log('Event id:', selectedEvent.betOffers[0].id);
 
-        //Replacing automatically the value of value bet-offer-id in eyas-match-container
-        const miMatch = document.getElementById("miMatch");
-        miMatch.setAttribute("bet-offer-id", selectedEvent.betOffers[0].id);
+        //Condition to check if the bet-offer-type is 2 (1x2)
+        if (selectedEvent.betOffers[0].betOfferType.id == 2) {
 
-        //Creating a new one with the uptaded match
-        const nuevoMatch = miMatch.cloneNode(true);
-        miMatch.replaceWith(nuevoMatch);
-        
+            //Replacing automatically the value of value bet-offer-id in eyas-match-container
+            const miMatch = document.getElementById("miMatch");
+            miMatch.setAttribute("bet-offer-id", selectedEvent.betOffers[0].id);
+
+            //Creating a new one with the uptaded match
+            const nuevoMatch = miMatch.cloneNode(true);
+            miMatch.replaceWith(nuevoMatch);
+        }
+
+
+
 
     }
 
