@@ -18,9 +18,13 @@
         <a href="index-prod.html">PROD</a>
     </div>
     <h1>AEM match component test page for UAT</h1>
-    <eyas-match-container id="miMatch">No Matches currently
+
+    <!-- You dont need to do nothing to make it works, the value of bet-offer-id is updated 
+        automatically every time that the comp is refreshed, so you will see a different match every single every time-->
+    <eyas-match-container id="miMatch" bet-offer-id="463345454635">No Matches currently
         avaliable</eyas-match-container>
 
+    <!-- Other consideration is that we need to indicate if we want matches of prod or not, you can use the atributte prod='false' below-->
     <eyas-match prod="false"></eyas-match>
 
     <script src="./js/match.js"></script>

@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <!-- ONLY INCLUDE SCRIPT ONCE PER PAGE -->
-        <script src="https://lancebet-com-dev.eyasgaming.net/etc.clientlibs/eyas-web/clientlibs/external-components.latest.js" data-eyas-config="https://lancebet-com-dev.eyasgaming.net/content/eyas-web/lancebet_com/pt.client.settings.json" async></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <!-- ONLY INCLUDE SCRIPT ONCE PER PAGE -->
+    <script
+        src="https://lancebet-com-dev.eyasgaming.net/etc.clientlibs/eyas-web/clientlibs/external-components.latest.js"
+        data-eyas-config="https://lancebet-com-dev.eyasgaming.net/content/eyas-web/lancebet_com/pt.client.settings.json"
+        async></script>
+</head>
 
-    <body>
-        <div id="links">
-            DEV |
-            <a href="index.html">UAT</a> |
-            <a href="index-stage.html">STAGE</a> |
-            <a href="index-prod.html">PROD</a>
-        </div>
-        <h1>AEM match component test page for DEV</h1>
-        <eyas-match-container id="miMatch">No Matches currently 
-            avaliable</eyas-match-container>
-            
-        <eyas-match prod="false"></eyas-match>
+<body>
+    <div id="links">
+        DEV |
+        <a href="index.html">UAT</a> |
+        <a href="index-stage.html">STAGE</a> |
+        <a href="index-prod.html">PROD</a>
+    </div>
+    <h1>AEM match component test page for DEV</h1>
+    
+    <!-- You dont need to do nothing to make it works, the value of bet-offer-id is updated 
+        automatically every time that the comp is refreshed, so you will see a different match every single every time-->
+    <eyas-match-container id="miMatch" bet-offer-id="463345454635">No Matches currently
+        avaliable</eyas-match-container>
+
+    <!-- Other consideration is that we need to indicate if we want matches of prod or not, you can use the atributte prod='false' below-->
+    <eyas-match prod="false"></eyas-match>
 
     <script src="./js/match.js"></script>
 
-   </body>
+
+</body>
 
 </html> 

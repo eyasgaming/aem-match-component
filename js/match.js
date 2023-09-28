@@ -116,8 +116,8 @@ class Match extends HTMLElement {
         const randomEventId = eventIds[Math.floor(Math.random() * eventIds.length)];
         //Selecting the event with the random id
         const selectedEvent = events.find((event) => event.id === randomEventId);
-        console.log('Evento seleccionado:', selectedEvent);
-        console.log('Id del evento:', selectedEvent.betOffers[0].id);
+        console.log('Event selected:', selectedEvent);
+        console.log('Event id:', selectedEvent.betOffers[0].id);
 
         //Replacing automatically the value of value bet-offer-id in eyas-match-container
         const miMatch = document.getElementById("miMatch");
@@ -126,7 +126,7 @@ class Match extends HTMLElement {
         //Creating a new one with the uptaded match
         const nuevoMatch = miMatch.cloneNode(true);
         miMatch.replaceWith(nuevoMatch);
-
+        
 
     }
 
